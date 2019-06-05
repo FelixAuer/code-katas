@@ -38,7 +38,7 @@ class Finder2 implements FinderInterface
                 return -1;
             }
 
-            return $middle - ($middle - $subsetIndex) ;
+            return $subsetIndex;
         }
     }
 
@@ -51,6 +51,8 @@ class Finder2 implements FinderInterface
      * da man einmal nach links und einmal nach rechts muss.
      *
      * Wieder Fehler mit > und <.
+     *
+     * Im Nachhinein Fehler gefunden.
      *
      */
 }

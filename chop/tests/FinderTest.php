@@ -4,6 +4,7 @@ use PHPUnit\Framework\TestCase;
 use Chop\Finder1;
 use Chop\Finder2;
 use Chop\Finder3;
+use Chop\Finder4;
 use Chop\FinderInterface;
 
 final class FinderTest extends TestCase
@@ -24,6 +25,12 @@ final class FinderTest extends TestCase
     public function Finder3()
     {
         $this->_finderTest(new Finder3);
+    }
+
+    /** @test */
+    public function Finder4()
+    {
+        $this->_finderTest(new Finder4);
     }
 
     protected function _finderTest(FinderInterface $finder)
